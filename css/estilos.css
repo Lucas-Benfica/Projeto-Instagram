@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  header {
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .desktop {
+    display: inline-block;
+  }
+  .mobile {
+    display: none;
+    width: 614px;
+  }
+  
+  .topo {
+    background-color: white;
+    width: 935px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topo > div {
+    height: auto;
+    display: flex;
+  }
+  .topo img {
+    width: 90px;
+  }
+  .linha-ver {
+    width: 1px;
+    height: 22px;
+    background-color: #dbdbdb;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  ion-icon {
+    width: 22px;
+    height: 22px;
+    color: #000000;
+  }
+  input {
+    height: 28px;
+    width: 215px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+  }
+  .espaco {
+    width: 118px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container-corpo {
+    width: 100%;
+  }
+  .corpo {
+    width: 935px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .esquerda {
+    width: 614px;
+    margin-right: 28px;
+  }
+  .caixa-stories {
+    width: 614px;
+    height: 118px;
+    background-color: white;
+    margin-top: 88px;
+    margin-bottom: 24px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding-left: 18px;
+    padding-top: 18px;
+    display: flex;
+    position: relative;
+    overflow-x: scroll;
+    overflow-x: hidden;
+  }
+  .story {
+    width: 66px;
+    height: auto;
+    margin-right: 15px;
+  }
+  .story > div:nth-child(1) {
+    width: 66px;
+    height: 66px;
+    background-image: url("../img/stories_background.jpg");
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 66px 66px;
+    margin-bottom: 5px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .story img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50px;
+  }
+  .story div:nth-child(2) {
+    font-size: 12px;
+    font-weight: 500;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+  }
+  .setinha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50px;
+    position: absolute;
+    top: 46px;
+    right: 9px;
+    background-color: #dbdbdb;
+    box-shadow: 0 2px 2px #dbdbdb;
+  }
+  
+  .setinha > ion-icon {
+    color: white;
+    height: 26px;
+    width: 26px;
+    border-radius: 50px;
+  }
+  
+  .feed {
+    background-color: white;
+  }
+  .public {
+    width: 100%;
+    height: 749px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 60px;
+  }
+  .public > div:nth-child(1) {
+    height: 61px;
+    width: 100%;
+    padding-left: 17px;
+    padding-right: 17px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .usuario {
+    display: flex;
+    align-items: center;
+  }
+  .usuario p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .public-perfil {
+    height: 32px;
+    width: 32px;
+    border-radius: 50px;
+    margin-right: 10px;
+  }
+  .public > img {
+    height: 612px;
+    width: 100%;
+  }
+  video {
+    height: 612px;
+    width: 612px;
+  }
+  .public > div:nth-child(3) {
+    height: 76px;
+    width: 100%;
+  
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .like {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+  }
+  .like div {
+    display: flex;
+    justify-content: space-between;
+    width: 96px;
+  }
+  .curtido {
+    font-size: 14px;
+  
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 2px;
+  }
+  .curtido img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    margin-right: 5px;
+  }
+  .direita {
+    /*position: relative;*/
+    width: 293px;
+  }
+  .sidebar {
+    /*position: absolute;*/
+    display: inline-block;
+    width: 293px;
+    height: 100px;
+    margin-top: 88px;
+  }
+  .meu-perfil {
+    display: flex;
+    align-items: center;
+    padding-top: 23px;
+  }
+  .meu-perfil img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50px;
+    margin-right: 15px;
+  }
+  .meu-perfil h1 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  .meu-perfil h2 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .sugestoes div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 17px;
+    margin-right: 5px;
+  }
+  .s1 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #8e8e8e;
+  }
+  .s2 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #262626;
+  }
+  .recomendados {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 5px;
+  }
+  
+  .recomendados img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+  }
+  .txt-rec {
+    height: 32px;
+    width: 293px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 11px;
+  }
+  .txt-rec h1 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+  }
+  .txt-rec h2 {
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #bebebe;
+  }
+  .seguir {
+    position: absolute;
+    top: 11px;
+    right: 0;
+    color: #139ef2;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .barra-inferior {
+    height: 54px;
+    width: 614px;
+    padding: 16px 20px;
+    display: none;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  .apenas0para-testar{
+    background-color: red;
+  }

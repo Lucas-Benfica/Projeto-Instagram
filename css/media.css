@@ -1,0 +1,39 @@
+@media screen and (max-width: 935px) {
+    .topo {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .esquerda {
+      margin: 0 auto;
+    }
+    .direita {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 614px) {
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: inline-block;
+    }
+    .topo {
+      width: 614px;
+    }
+    .corpo {
+      width: 614px;
+    }
+    .caixa-stories {
+      margin-top: 54px;
+      margin-bottom: 0;
+    }
+    .setinha {
+      display: none;
+    }
+    .barra-inferior {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+    }
+  }
+  
